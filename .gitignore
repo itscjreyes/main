@@ -2,3 +2,4 @@ public/styles
 public/scripts
 node_modules/
 .DS_Store
+package-lock.json

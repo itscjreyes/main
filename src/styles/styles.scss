@@ -1,0 +1,84 @@
+@import 'normalize';
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
+
+$font: 'Space Mono', monospace;
+$black: #101010;
+
+body {
+    font-family: $font;
+    color: $black;
+}
+
+h1 {
+    position: relative;
+    margin: 0;
+    font-size: 60px;
+
+    &:before {
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 8px;
+        background: $black;
+        left: -70px;
+        top: 42px;
+        transition: all 0.2s ease;
+    }
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    font-weight: 700;
+    text-decoration: underline;
+    color: $black;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.content {
+    position: relative;
+    left: -50px;
+    top: 20vh;
+    max-width: 500px;
+    margin: 20px auto 0;
+    transition: all 0.2s ease;
+}
+
+.contact {
+    a {
+        display: inline-block;
+        margin: 0 5px;
+        font-size: 30px;
+        opacity: 0.5;
+        transition: all 0.1s ease;
+
+        &:hover,
+        &:focus {
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .content {
+        left: 0;
+        padding: 0 40px;
+        top: 10vh;
+    }
+
+    h1 {
+        font-size: 50px;
+
+        &:before {
+            width: 30px;
+            left: -40px;
+            top: 35px;
+        }
+    }
+}
