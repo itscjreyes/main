@@ -176,15 +176,17 @@ a {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 
-.contact a {
-  display: inline-block;
-  margin: 0 5px;
-  font-size: 30px;
-  opacity: 0.5;
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease; }
-  .contact a:hover, .contact a:focus {
-    opacity: 1; }
+.contact {
+  padding-bottom: 10vh; }
+  .contact a {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 30px;
+    opacity: 0.5;
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease; }
+    .contact a:hover, .contact a:focus {
+      opacity: 1; }
 
 @media screen and (max-width: 767px) {
   .content {
